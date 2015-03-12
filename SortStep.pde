@@ -16,12 +16,12 @@ public void draw(){
 public void selectionSortTest()
 {
   System.out.println("Testing Selection Sort");
+  fillArray(numInts, largestInt);
   if(isSorted() == false)
   {
     System.out.println("Sort not working");
     return;
   }
-  fillArray(numInts, largestInt);
   watch.reset();
   watch.start();
   mySorts.selectionSort(myArray);
@@ -31,12 +31,12 @@ public void selectionSortTest()
 public void bubbleSortTest()
 {
   System.out.println("Testing Bubble Sort");
+  fillArray(numInts, largestInt);
   if(isSorted() == false)
   {
     System.out.println("Sort not working");
     return;
   }
-  fillArray(numInts, largestInt);
   watch.reset();
   watch.start();
   mySorts.bubbleSort(myArray);
@@ -46,12 +46,12 @@ public void bubbleSortTest()
 public void insertionSortTest()
 {
   System.out.println("Testing Insertion Sort");
+  fillArray(numInts, largestInt);
   if(isSorted() == false)
   {
     System.out.println("Sort not working");
     return;
   }
-  fillArray(numInts, largestInt);
   watch.reset();
   watch.start();
   mySorts.insertionSort(myArray);
@@ -61,12 +61,12 @@ public void insertionSortTest()
 public void mergeSortTest()
 {
   System.out.println("Testing Merge Sort");
+  fillArray(numInts, largestInt);
   if(isSorted() == false)
   {
     System.out.println("Sort not working");
     return;
   }
-  fillArray(numInts, largestInt);
   watch.reset();
   watch.start();
   mySorts.mergeSort(myArray,0,myArray.length-1);
