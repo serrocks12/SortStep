@@ -17,14 +17,14 @@ public void selectionSortTest()
 {
   System.out.println("Testing Selection Sort");
   fillArray(numInts, largestInt);
+  watch.reset();
+  watch.start();
+  mySorts.selectionSort(myArray);
   if(isSorted() == false)
   {
     System.out.println("Sort not working");
     return;
   }
-  watch.reset();
-  watch.start();
-  mySorts.selectionSort(myArray);
   watch.stop();
   System.out.println("Selection Sort took " +watch.elapsedTime()/1000 + " microseconds");
 }
@@ -32,14 +32,14 @@ public void bubbleSortTest()
 {
   System.out.println("Testing Bubble Sort");
   fillArray(numInts, largestInt);
+  watch.reset();
+  watch.start();
+  mySorts.bubbleSort(myArray);
   if(isSorted() == false)
   {
     System.out.println("Sort not working");
     return;
   }
-  watch.reset();
-  watch.start();
-  mySorts.bubbleSort(myArray);
   watch.stop();
   System.out.println("Bubble Sort took " +watch.elapsedTime()/1000 + " microseconds");
 }
@@ -47,14 +47,14 @@ public void insertionSortTest()
 {
   System.out.println("Testing Insertion Sort");
   fillArray(numInts, largestInt);
+  watch.reset();
+  watch.start();
+  mySorts.insertionSort(myArray);
   if(isSorted() == false)
   {
     System.out.println("Sort not working");
     return;
   }
-  watch.reset();
-  watch.start();
-  mySorts.insertionSort(myArray);
   watch.stop();
   System.out.println("Insertion Sort took " +watch.elapsedTime()/1000 + " microseconds");
 }
@@ -62,14 +62,14 @@ public void mergeSortTest()
 {
   System.out.println("Testing Merge Sort");
   fillArray(numInts, largestInt);
+  watch.reset();
+  watch.start();
+  mySorts.mergeSort(myArray,0,myArray.length-1);
   if(isSorted() == false)
   {
     System.out.println("Sort not working");
     return;
   }
-  watch.reset();
-  watch.start();
-  mySorts.mergeSort(myArray,0,myArray.length-1);
   watch.stop();
   System.out.println("Merge Sort took " +watch.elapsedTime()/1000 + " microseconds");
 }
