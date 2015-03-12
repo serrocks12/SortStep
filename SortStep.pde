@@ -16,6 +16,11 @@ public void draw(){
 public void selectionSortTest()
 {
   System.out.println("Testing Selection Sort");
+  if(isSorted() == false)
+  {
+    System.out.println("Sort not working");
+    return;
+  }
   fillArray(numInts, largestInt);
   watch.reset();
   watch.start();
@@ -28,7 +33,7 @@ public void bubbleSortTest()
   System.out.println("Testing Bubble Sort");
   if(isSorted() == false)
   {
-    System.out.println("Sort no working");
+    System.out.println("Sort not working");
     return;
   }
   fillArray(numInts, largestInt);
@@ -43,7 +48,7 @@ public void insertionSortTest()
   System.out.println("Testing Insertion Sort");
   if(isSorted() == false)
   {
-    System.out.println("Sort no working");
+    System.out.println("Sort not working");
     return;
   }
   fillArray(numInts, largestInt);
@@ -58,7 +63,7 @@ public void mergeSortTest()
   System.out.println("Testing Merge Sort");
   if(isSorted() == false)
   {
-    System.out.println("Sort no working");
+    System.out.println("Sort not working");
     return;
   }
   fillArray(numInts, largestInt);
