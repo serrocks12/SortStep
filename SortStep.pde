@@ -75,9 +75,9 @@ public void mergeSortTest()
 }
 private void fillArray(int numInts, int largestInt)
 {
-  for (int loop = 0; loop < myArray.length; loop++)
+  for (int i = 0; i < myArray.length; i++)
   {
-    myArray[loop] = (int)(Math.random()*largestInt + 1);
+    myArray[i] = (int)(Math.random()*largestInt + 1);
   }
 }
 private boolean isSorted()
